@@ -1,0 +1,17 @@
+\documentclass[oneside]{book} %oneside removes extra blank page that gets added after chapter
+\include{parts/preamble}
+\begin{document}
+	\frontmatter
+	\include{parts/title}
+	\include{parts/dedication}
+	\tableofcontents
+	\listoftables
+	\listoffigures
+	\mainmatter
+	\include{chapters/chapter1}
+	\include{chapters/chapter2}
+	\backmatter
+	\include{parts/proofs}
+	\nocite{*} % if yiu want to print all references irrespective of citations
+	\printbibliography % if you are using biblatex, natbib is older
+\end{document}
